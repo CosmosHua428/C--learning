@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    printf("请输入体重(kg)以及身高(m):");
+    
+    double weight;
+    double height;
+
+    scanf("%lf %lf",&weight,&height);
+
+    double bmi = weight / (height * height);  //单独定义浮点数并让它计算，可以避免在printf中出现错误。
+
+    printf("你的BMI是%.2f。\n",(bmi)); //%.2f可以让输出结果为2位小数。%f可以输出最多6位小数。
+
+    if(bmi < 18.5) printf("体重过轻");
+    else if(bmi < 24) printf("体重正常");
+    else if(bmi < 28) printf("超重");
+    else printf("肥胖");
+
+    return 0;
+
+}
