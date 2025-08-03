@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int a = 10;  
+    /*给定初始值。
+    如果用户输入的不是数字，最后会输出初始值的运算结果。*/
+    int b = 10; 
+
+    printf("请输入两个整数：");
+    scanf("%d %d",&a,&b);
+    printf("%d\n",a + b);
+
+    return 0;
+
+}
